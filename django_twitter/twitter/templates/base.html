@@ -5,8 +5,10 @@
     <title>Twitter v_2.0</title>
 </head>
 <body>
-    <h2>Witaj na Twitter v_2.0!</h2>
+    <h4>Twitter v_2.0</h4>
     {% block content %}
+    <h2>Witaj na stronie głównej Twitter v_2.0</h2><br><br>
+    <a href="{% url 'all-tweets' %}">Przejdź do tweet'ów</a>
     {% endblock %}
 </body>
 </html>

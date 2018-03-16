@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import url
 
-from twitter.views import MainPageView
+from twitter.views import MainPageView, AllTweetsView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', MainPageView.as_view(), name="main"),
+    url(r'^tweets$', AllTweetsView.as_view(), name="all-tweets")
 
 ]
