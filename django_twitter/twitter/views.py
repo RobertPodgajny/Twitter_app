@@ -11,7 +11,7 @@ class MainPageView(View):
 
 class AllTweetsView(View):
     def get(self, request):
-        tweets = Tweet.objects.all().order_by("creation_date")
+        tweets = Tweet.objects.all().order_by("-creation_date")
         ctx = {
             'tweets': tweets,
         }
